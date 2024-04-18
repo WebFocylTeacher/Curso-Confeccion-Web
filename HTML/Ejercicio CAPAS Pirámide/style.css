@@ -1,0 +1,14 @@
+div {
+	border: 1px solid black;
+}
+
+.fila {
+	text-align: center;
+}
+
+.ladrillo {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	background-color: orange;
+}

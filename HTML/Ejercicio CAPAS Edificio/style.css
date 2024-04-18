@@ -1,0 +1,37 @@
+div {
+	border: 1px solid black;
+}
+
+img {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+}
+
+.edificio {
+	width: 300px;
+	height: 492px;
+	background-color: #c2c1c1;
+	margin: auto;
+}
+
+.planta {
+	text-align: center;
+}
+
+.ventana {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: cadetblue;
+	margin: 20px;
+	border-radius: 10%;
+	position: relative;
+}
+
+.puerta {
+	width: 70px;
+	height: 140px;
+	background-color: brown;
+	margin: auto;	
+}

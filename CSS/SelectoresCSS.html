@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		* {
+			font-family: sans-serif;
+		}
+
+		h1 {
+			text-align: center; 
+			color: yellow;
+		}
+
+		td, th {
+			border: 1px solid black;
+			padding: 4px;
+		}
+
+		table {
+			margin: auto;
+		}
+
+		tr>td {
+			font-weight: 900;
+			text-align: center;
+			color: blue;
+		}
+
+		td+td {
+			font-weight: 100;
+			text-align: left;
+			color: black;
+		}
+
+		tr:hover {
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Apuntes CSS</h1>
+
+	<table>
+		<tr>
+			<th>Símbolo</th>
+			<th>Ejemplo</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>(espacio)</td>
+			<td>div p {}</td>
+			<td>Aplica las propiedades a los p que están dentro de un div</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td> * {}</td>
+			<td>Selecciona TODO</td>
+		</tr>
+		<tr>
+			<td>,</td>
+			<td>h1, p {}</td>
+			<td>Aplica estas propiedades a h1 Y a p</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td>.clase {}</td>
+			<td>Aplica esas propiedades a los elementos que tengan el atributo class="clase"</td>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>#identificador {}</td>
+			<td>Aplica esas propiedades a los elementos que tengan el atributo id="identificador"</td>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td>div+p {}</td>
+			<td>Aplica estas propiedades a los p que están inmediatamente después un hermano div</td>
+		</tr>
+		<tr>
+			<td>></td>
+			<td>div>p {}</td>
+			<td>Aplica estas propiedades a los p que son hijos de un div</td>
+		</tr>
+		<tr>
+			<td>~</td>
+			<td>div~p {}</td>
+			<td>Aplica estas propiedades a todos los p a partir del momento en el que haya aparecido un div</td>
+		</tr>
+		<tr>
+			<td>::</td>
+			<td>
+				<ol>
+					<li>p::first-line {}</li>
+					<li>p::first-letter {}</li>
+					<li>p::before {}</li>
+					<li>p::after {}</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Da estilo a la primera línea</li>
+					<li>Da estilo a la primera letra</li>
+					<li>p::before{content:"Añade contenido al principio";}</li>
+					<li>p::after{content:"Añade contenido al final";}</li></li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>
+				<ol>
+					<li>a:link{}</li>
+					<li>a:visited {}</li>
+					<li>a:hover {}</li>
+					<li>:target {}</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Da estilo a los links que NO hemos visitado</li>
+					<li>Da estilo a los links que SÍ hemos visitado</li>
+					<li>Da estilo a los links cuando el cursor pasa por encima</li>
+					<li>Da estilo a la parte de la página donde me lleva el link</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>
+				<ol>
+					<li>input:focus {}</li>
+					<li>input:active {}</li>
+					<li>input:enabled {}</li>
+					<li>input:disabled {}</li>
+					<li>input:checked {}</li>
+					<li>input:read-only {}</li>
+					<li>input:required {}</li>
+					<li>input:invalid {}</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Da estilo al input donde podemos escribir</li>
+					<li>Da estilo al input en el momento preciso en el que lo seleccionamos para escribir</li>
+					<li>Da estilo al input cuando está habilitado</li>
+					<li>Da estilo al input cuando está deshabilitado</li>
+					<li>Da estilo al input cuando está seleccionado un checkbox o un radio</li>
+					<li>Da estilo al input cuando es de sólo lectura</li>
+					<li>Da estilo al input cuando es requerido</li>
+					<li>Da estilo al input cuando no tiene el formato válido según su tipo</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>
+				<ol>
+					<li>p:first-child {}</li>
+					<li>p:last-child {}</li>
+					<li>p:only-child {}</li>
+					<li>p:nth-child(4) {}</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Da estilo al p si es el primer hijo de su padre</li>
+					<li>Da estilo al p si es el último hijo de su padre</li>
+					<li>Da estilo al p si es hijo único de su padre</li>
+					<li>Da estilo al p si es el cuarto hijo de su padre</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>
+				<ol>
+					<li>p:first-of-type {}</li>
+					<li>p:last-of-type {}</li>
+					<li>p:only-of-type {}</li>
+					<li>p:nth-of-type(4) {}</li>
+					<li>p:nth-last-of-type(4) {}</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Da estilo al p si es el primer elemento p en aparecer</li>
+					<li>Da estilo al p si es el último elemento p en aparecer</li>
+					<li>Da estilo al p si es el único elemento p</li>
+					<li>Da estilo al p si es la cuarta vez que aparece un elemento p</li>
+					<li>Da estilo al p si es el cuarta vez que aparece un elemento p empezando a contar desde abajo</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>:root {}</td>
+			<td>Afecta al elemento raíz (html)</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>:empty {}</td>
+			<td>Afecta a los elementos vacíos</td>
+		</tr>
+		<tr>
+			<td>:</td>
+			<td>p:not {}</td>
+			<td>Afecta a los elementos que no sean p</td>
+		</tr>
+		<tr>
+			<td>[]</td>
+			<td>
+				<ol>
+					<li>elemento[atributo=valor]</li>
+					<li>elemento[atributo~=valor]</li>
+					<li>elemento[atributo^=valor]</li>
+					<li>elemento[atributo$=valor]</li>
+					<li>elemento[atributo*=valor]</li>
+				</ol>
+			</td>
+			<td>
+				<ol>
+					<li>Selecciona elementos cuyo atributo es exactamente igual a valor</li>
+					<li>Selecciona elementos cuyo atributo es igual al valor entre otros valores</li>
+					<li>Selecciona elementos cuyo atributo empieza por algo igual a valor</li>
+					<li>Selecciona elementos cuyo atributo acaba por algo igual a valor</li>
+					<li>Selecciona elementos cuyo atributo contiene algo igual a valor</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
